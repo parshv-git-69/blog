@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #FFF5EE;
+        }
+
+        nav.top {
+            background-color: #5D3FD3;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: xx-large;
+        }
+
+        h2 {
+            padding-top: 45px;
+            padding-left: 20px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p.description {
+            font-size: x-large;
+            margin-left: 17px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            word-wrap: normal;
+        }
+
+        div.animeplanet a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.animeplanet p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.animeplanet img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.justaweeb a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.justaweeb p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.justaweeb img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.gogo a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.gogo p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.gogo img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.animix a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.animix p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.animix img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.webtoons a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.webtoons p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.webtoons img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.pahe a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.pahe p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.pahe img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.dex a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.dex p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.dex img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.asura a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.asura p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.asura img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+
+        div.kakalot a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.kakalot p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.kakalot img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+        div.frenzy a {
+            margin-left: 15px;
+            font-size: xx-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            color: deeppink;
+        }
+
+        div.frenzy p {
+            margin-left: 27px;
+            font-size: x-large;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            word-wrap: normal;
+        }
+
+        div.frenzy img {
+            margin-left: 8px;
+            border: 3px solid greenyellow;
+        }
+        nav.bottom {
+            background-color: #4169E1;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="top">
+            <h1>HERBSOCIALGEEK</h1>
+        </nav>
+    </header>
+    <main>
+        <b:section>
+        <h2>Top 10 websites to watch anime for free</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="description">Anime (pronounced AH-nee-may ) is a term for a style of Japanese comic book and video
+            cartoon animation in which the main characters have large doe-like eyes. Many Web sites are devoted to
+            anime. Anime is the prevalent style in Japanese comic books or manga. In the 1980s, anime became mainstream
+            in Japan, experiencing a boom in production with the rise in popularity of anime like Gundam, Macross,
+            Dragon Ball. In todays world <b>ANIME</b> have took place of many forms of entertainment, the world has
+            started recognizing anime as a new form of entertainment. People like to enjoy watching anime, it has also
+            broken the age barriers, from old age to small children everyone enjoy watching anime. There are many
+            famous titles like, Naruto, Demon Slayer, One Punch Man, Death note and many more, possibilities are
+            endless.
+            But there is one question that everybody has ,How to watch?, Where to watch?, don't worry we got you.
+            Today i will be sharing top 10 websites where you can watch anime for free in India and elsewhere.
+        </p>
+        <br>
+        <br>
+        <div class="animeplanet">
+            <b><a href="https://www.anime-planet.com/" animation-name="planet">1.) Anime Planet</a></b>
+            <br><br>
+            <p>Stream over 45,000 legal, industry-supported anime episodes here on Anime-Planet. You can also create
+                your anime list
+                on Anime-Planet,Anime Planet is a free and open source anime streaming platform where you can watch
+                anime even if anime is ban in your region.This is not the end list keeps on going, you can also read
+                MANGA comics. </p>
+            <img src="planet.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="justaweeb">
+            <b><a href="https://simplyaweeb.to/">2.) Simply A Weeb</a></b>
+            <br><br>
+            <p>Simply A Weeb is a new and open source anime streaming platform, where you can not only you can watch
+                Anime but you can also watch MEMES, MUSIC and also read MANGA comics too. The developers have just
+                launched it a few weeks ago, there are many more updates to come.Till then ya'll can enjoy streaming
+                Anime ;)</p>
+            <img src="weeb.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="gogo">
+            <b><a href="https://ww3.gogoanime2.org/home">3.) Gogo Anime</a></b>
+            <br><br>
+            <p>Gogo Anime is a free Anime running website that gives online anime content at no cost. You get numerous
+                anime movies, short stories, and TV suggestions to keep you stuck to this site. You get several sorts
+                like romance, mystery, etc. The first-rate element approximately Gogoanime is the site is always up to
+                date. You get the modern anime shows. The web page gives a sizeable variety of anime content material.
+                As you would possibly know, Anime has its origin in Japan.</p>
+            <img src="gogo.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="animix">
+            <b><a href="https://animixplay.to/">4.) Animix Play</a></b>
+            <br><br>
+            <p>Animix Play is the alternative of AnimeDao Tv which was relly popular back then when it was just
+                released, but eventually it got banned as others. But no worries we got you, Animix Play is also an open
+                source Anime player which is not as popular as other websites but works quite well.</p>
+            <img src="animix.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="webtoons">
+            <b><a href="https://www.webtoons.com/en/">5.) Web Toons</a></b>
+            <br><br>
+            <p>Web Toons started a whole new way to create stories and opened it up to anyone with a story to tell.
+                Web Toons is home to thousands of creator-owned content with amazing, diverse visions from all over the
+                world.
+                Get in on the latest original romance, comedy, action, fantasy, horror, and more from big names and
+                big names to be - made just for WEBTOON.
+                Web Toons is available anywhere, anytime, and always for free.
+            </p>
+            <img src="webtoon.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pahe">
+            <b><a href="https://animepahe.online/">6.) Anime Pahe</a></b>
+            <br><br>
+            <p>As usual Anime Pahe is also an underrated Anime streaming platform. Anime Pahe name is quiet hard to
+                remember, also the speed of the website is too slow but can stream high quality Anime. So i would
+                probably give Anime Pahe 10/6 rating.
+            </p>
+            <img src="pahe.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="dex">
+            <b><a href="https://mangadex.org/">7.) MangaDex</a></b>
+            <br><br>
+            <p>MangaDex is an online manga reader that caters to all languages. MangaDex is made by scanlators, for
+                scanlators, and gives active scanlation groups complete control over their releases. All of the content
+                on our site is uploaded either by users, scanlation groups, and in some instances the publishers
+                themselves.
+            </p>
+            <img src="dex.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="asura">
+            <b><a href="https://www.asurascans.com/">8.) AsuraScans</a></b>
+            <br><br>
+            <p> Asura Scans is more of a Manga/Comic based website but, it's just for reading manga, you can watch anime
+                but it has limited libraries of Anime,but don't think that its not a good website, it's really good to
+                read manga in this website in high quality.
+            </p>
+            <img src="asura.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="kakalot">
+            <b><a href="https://mangakakalot.com/">9.) Manga Kakalot</a></b>
+            <br><br>
+            <p> MangaKakalot i know the name is kinda funny. But MangaKakalot have got a serious plan to be number one
+                in
+                terms of Anime streaming platforms, you will fall in love with this website as soon as you start reading
+                manga and anime. They have got a huge Anime library which eventually will become a top site for Anime.
+            </p>
+            <img src="kaka.jpg" width="390px">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="frenzy">
+            <b><a href="https://animefrenzy.net/">10.) Anime Frenzy</a></b>
+            <br><br>
+            <p>
+                Last but not least on our list is Anime Frenzy, it is literally the best site till date it has a really
+                good user experience which has a very nice premium feel the user interface is too good, and talking
+                about the anime streaming service, which is top notch, and would be my personal favorite website to
+                watch anime.
+            </p>
+            <img src="frenzy.jpg" width="390px">
+        </div>
+    </main>
+    <footer>
+        <nav class="bottom"></nav>
+    </footer>
+
+</b:section>
+</body>
+
+</html>
